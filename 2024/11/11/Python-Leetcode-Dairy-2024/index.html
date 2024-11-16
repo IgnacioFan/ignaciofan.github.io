@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Happy and Mindful</title>
+  <title>Python Leetcode Dairy 2024 | Happy and Mindful</title>
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="William&#39;s blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Happy and Mindful">
-<meta property="og:url" content="https://ignaciofan.github.io/index.html">
+  <meta name="description" content="Two pointers2024-11-15 Multiple range comparisons Transform a string  12345# multiple range comparisonsdef alphaNumeric(self, c):  return &#x27;A&#x27; &lt;&#x3D; c &lt;&#x3D; &#x27;Z&#x27; or &#x27;a&#x27; &amp;lt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python Leetcode Dairy 2024">
+<meta property="og:url" content="https://ignaciofan.github.io/2024/11/11/Python-Leetcode-Dairy-2024/index.html">
 <meta property="og:site_name" content="Happy and Mindful">
-<meta property="og:description" content="William&#39;s blog">
+<meta property="og:description" content="Two pointers2024-11-15 Multiple range comparisons Transform a string  12345# multiple range comparisonsdef alphaNumeric(self, c):  return &#x27;A&#x27; &lt;&#x3D; c &lt;&#x3D; &#x27;Z&#x27; or &#x27;a&#x27; &amp;lt">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-11-11T20:51:08.000Z">
+<meta property="article:modified_time" content="2024-11-16T04:57:39.584Z">
 <meta property="article:author" content="William Fan">
 <meta name="twitter:card" content="summary">
   
@@ -39,145 +41,7 @@
 </header>
 
     <div id="main">
-      
-  
-    <article id="post-first-test-post" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2024/11/16/first-test-post/" class="article-date">
-  <time datetime="2024-11-16T05:27:12.000Z" itemprop="datePublished">2024-11-16</time>
-</a>
-		</span>
-		<span class="meta-elements author">William Fan</span>
-		<div class="commentscount">
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2024/11/16/first-test-post/">first-test-post</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	<p>Hello! test test! OK!<br>Test again!<br>Test add cactus theme</p>
-
-    
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-			</span>
-			<span class="tags">
-				
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
-  
-    <article id="post-Python-Django-Quick-Overview" class="post">
-	<footer class="entry-meta-header">
-		<span class="meta-elements date">
-			<a href="/2024/11/11/Python-Django-Quick-Overview/" class="article-date">
-  <time datetime="2024-11-11T21:32:47.000Z" itemprop="datePublished">2024-11-11</time>
-</a>
-		</span>
-		<span class="meta-elements author">William Fan</span>
-		<div class="commentscount">
-			
-		</div>
-	</footer>
-	
-	<header class="entry-header">
-		
-  
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2024/11/11/Python-Django-Quick-Overview/">Python &amp; Django Quick Overview</a>
-    </h1>
-  
-
-	</header>
-	<div class="entry-content">
-		
-    	<p>Python <code>Package</code> is a container for a bunch of modules</p>
-<ul>
-<li>a python <code>Module</code> is a signle source file</li>
-<li>using package to reduce naming pollution and improve code isolation</li>
-<li>eg. <code>__init__.py</code> tells python its containing folders should be treated like a package</li>
-</ul>
-<p>In Django, we use two different commands to organize our projects.</p>
-<ol>
-<li><code>django-admin startproject todo_project .</code>, we need this command to create a project folder that provides project-wide information, which means general project settings, information that a web server will need will be place at here<ol>
-<li>setting.py is a project-wide configurations (applications&#x2F;databases)</li>
-<li>urls.py has a list of URLs that the server must listen for (Django’s URL dispatcher uses the elements in <code>urlpatterns</code> to decide how to handle incoming requests)</li>
-</ol>
-</li>
-<li><code>django-admin startapp todo_app</code>, we need this command to create an app folder where the app will actually be run<ol>
-<li>migrations&#x2F;, the subfolder holds the database migration information</li>
-<li>models.py, we define the data model for the app (like Rails model)</li>
-<li>views.py, we design the control logic for the app (like Rails controller)</li>
-<li>templates&#x2F;, files contain HTML markup</li>
-</ol>
-</li>
-</ol>
-<p>In Django, we use these two commands to execute database migrations:</p>
-<ol>
-<li><code>python manage.py makemigrations todo_app</code>, with <code>makemigrations</code>, you are telling Django, you’ve changed the model, and you’d like to record this change.</li>
-<li><code>python manage.py migrate</code>, with <code>migrate</code>, you put those changes into effect.</li>
-</ol>
-<p>Questions:</p>
-<ul>
-<li>What does Meta class in Django Model do? What’s the advantage of having a Meta class?</li>
-<li>What is <code>get_absolute_url</code> in Django’s convention? What does <code>reverse</code> mean in Django’s Model?</li>
-</ul>
-<p>Python OOP<br><code>__str__</code>: it creates a readable representation of an object. help with debugging</p>
-<p>Django’s template engine<br>Django’s URL dispatcher</p>
-<p>How does this request and response cycle works?</p>
-<ol>
-<li>The server receives a GET request from a broswer, it creates an HTTPrequest object and using the URL dispatcher to find ListListView</li>
-<li>The ListListView (a ListView based on TodoList model) fetches all the TodoList records from database, turns them into Python objects and append them to object_list (default)</li>
-<li>The ListListView pass object_list to the template engine, which use the specified template, index.html</li>
-<li>The template engine builds the HTML code by using the passed-in data to populate HTML elements and combining it with base.html</li>
-<li>The view constructs an HTTPresponse object, containing the HTML and returns to server</li>
-<li>The server turns the HTTPresponse into an HTTP message and sends it back to the broswer</li>
-<li>The broswer fully render the response to the user.</li>
-</ol>
-
-    
-	</div>
-	<footer class="entry-footer">
-		<div class="entry-meta-footer">
-			<span class="category">
-				
-			</span>
-			<span class="tags">
-				
-			</span>
-		</div>
-	</footer>
-	
-</article>
-
-
-	<hr class="article-devider">
-
-
-
-  
-    <article id="post-Python-Leetcode-Dairy-2024" class="post">
+      <article id="post-Python-Leetcode-Dairy-2024" class="post">
 	<footer class="entry-meta-header">
 		<span class="meta-elements date">
 			<a href="/2024/11/11/Python-Leetcode-Dairy-2024/" class="article-date">
@@ -193,8 +57,8 @@
 	<header class="entry-header">
 		
   
-    <h1 itemprop="name" class="entry-title">
-      <a class="article-title" href="/2024/11/11/Python-Leetcode-Dairy-2024/">Python Leetcode Dairy 2024</a>
+    <h1 class="article-title entry-title" itemprop="name">
+      Python Leetcode Dairy 2024
     </h1>
   
 
@@ -267,15 +131,26 @@
 		</div>
 	</footer>
 	
+    
+<nav id="article-nav">
+  
+    <a href="/2024/11/11/Python-Django-Quick-Overview/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Python &amp; Django Quick Overview
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
 </article>
 
 
-	<hr class="article-devider">
 
-
-
-  
-  
 
     </div>
     <footer id="footer">
